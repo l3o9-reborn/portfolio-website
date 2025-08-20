@@ -27,7 +27,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/sparsh-kamat/portfolio-website
+    git clone https://github.com/l3o9-reborn/portfolio-website
     cd portfolio-website
     ```
 
