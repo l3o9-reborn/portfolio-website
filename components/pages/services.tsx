@@ -1,18 +1,11 @@
 "use client";
 
 import { services } from "@/lib/data";
-import { frontendTech, backendTech, toolsAndDevops, programmingLanguages } from "@/lib/data";
 import { motion } from "motion/react";
 import { BackgroundGradient } from "@/components/common/background-gradient";
 
 
 export default function Services() {
-  const techCategories = [
-    { title: "Frontend", data: frontendTech || [] },
-    { title: "Backend", data: backendTech || [] },
-    { title: "Tools & DevOps", data: toolsAndDevops || [] },
-    { title: "Languages", data: programmingLanguages || [] }
-  ];
 
   return (
     <section id="services" className="w-full py-27 bg-muted/40">

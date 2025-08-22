@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "@/public/headshot.jpg";
 import { AuroraBackground } from "../ui/aurora-background";
-import { Button } from "../ui/button";
 export default function Hero() {
   return (
     <section

@@ -32,7 +32,7 @@ export default function CaseStudy() {
           < div className="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-3 items-center">
             {caseStudies.map((study) => (
                 <div key={study.id || study.name}>
-                <CardSpotlight className="h-auto w-96 p-6">
+                  <CardSpotlight className="h-auto w-full max-w-sm p-4 sm:p-6">
                     {/* Project Name */}
                     <p className="text-xl font-bold relative z-20 mt-2 text-white">
                     {study.name}
