@@ -165,7 +165,7 @@ export const caseStudies = [
     id: 3,
     name: "Todofication — Task Management & Notifications",
     problem: "Users wanted a simple way to track daily todos, get reminders, and monitor task completion trends.",
-    solution: "Todo app with deadlines, automated nightly email reminders for due tasks, monthly completion graphs, and automatic cleanup of expired tasks using Node-Cron.",
+    solution: "Todo app with deadlines, automated nightly email reminders, progress graphs, automatic expired task cleanup using Node-Cron.",
     whatIBuilt: "Todo creation with deadlines, email notifications for due tasks, monthly analytics graphs, and nightly auto-deletion of expired todos.",
     outcome: "Helped users stay on top of tasks consistently; increased task completion rate and improved productivity tracking.",
     stack: ["Next.js", "React", "PostgreSQL", "Tailwind CSS", "Node-Cron", "Nodemailer", "Custom Magic Link (Authentication)", "Prisma"]

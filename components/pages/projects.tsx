@@ -23,7 +23,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className=" flex items-center w-full max-w-md md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-10 xl:px-0  ">
+      <div className=" flex items-center w-full max-w-md md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 md:px-8 xl:px-0  ">
         <ParallaxScroll projects={projects.slice(0, 2)} />
       </div>
 

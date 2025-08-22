@@ -1,66 +1,79 @@
 "use client";
 
-import { caseStudies} from "@/lib/data";
+import { caseStudies } from "@/lib/data";
 import { motion } from "motion/react";
-import { CardSpotlight } from "@/components/common/card-spotlight"
+import { CardSpotlight } from "@/components/common/card-spotlight";
 
 export default function CaseStudy() {
-
   return (
-    <section id="caseStudies" className="w-full py-27 bg-muted/40">
+    <section
+      id="caseStudies"
+      className="w-full py-27"
+      style={{ backgroundColor: "var(--color-muted)/40" }}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.h2 
+          <motion.h2
             className="text-5xl font-serif tracking-tight leading-tight mb-3"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            style={{ color: "var(--color-foreground)" }}
           >
             Case Studies
           </motion.h2>
-          <motion.p 
-            className="text-lg text-muted-foreground mb-8"
+          <motion.p
+            className="text-lg mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-          >
-           
-          </motion.p>
+            style={{ color: "var(--color-muted-foreground)" }}
+          />
         </div>
 
         <div className="flex justify-center">
-          < div className="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-3 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-3 items-center">
             {caseStudies.map((study) => (
-                <div key={study.id || study.name}>
-                  <CardSpotlight className="h-auto w-full max-w-sm p-4 sm:p-6">
-                    {/* Project Name */}
-                    <p className="text-xl font-bold relative z-20 mt-2 text-white">
+              <div key={study.id || study.name}>
+                <CardSpotlight
+                  className="h-auto w-full max-w-md p-4  sm:p-6"
+                  style={{
+                    backgroundColor: "var(--color-card)",
+                    color: "var(--color-card-foreground)",
+                  }}
+                >
+                  <p
+                    className="text-xl font-bold relative z-20 mt-2"
+                    style={{ color: "var(--color-foreground)" }}
+                  >
                     {study.name}
-                    </p>
+                  </p>
 
-                    {/* Problem / Solution / What I Built / Outcome */}
-                    <div className="text-neutral-200 mt-4 relative z-20 text-sm">
+                  <div className="mt-4 relative z-20 text-sm">
                     <ul className="list-none mt-2 space-y-2">
-                        <Step title={`Problem: ${study.problem}`} />
-                        <Step title={`Solution: ${study.solution}`} />
-                        <Step title={`What I Built: ${study.whatIBuilt}`} />
-                        <Step title={`Outcome: ${study.outcome}`} />
+                      <Step title={`Problem: ${study.problem}`} />
+                      <Step title={`Solution: ${study.solution}`} />
+                      <Step title={`What I Built: ${study.whatIBuilt}`} />
+                      <Step title={`Outcome: ${study.outcome}`} />
                     </ul>
-                    </div>
+                  </div>
 
-                    {/* Stack */}
-                    <div className="text-neutral-300 mt-4 relative z-20 text-sm flex flex-wrap gap-2">
+                  <div className="mt-4 relative z-20 text-sm flex flex-wrap gap-2">
                     {study.stack.map((tech, i) => (
-                        <span
+                      <span
                         key={i}
-                        className="bg-white/20 rounded-sm px-2 py-1 text-xs font-medium"
-                        >
+                        className="rounded-sm px-2 py-1 text-xs font-medium"
+                        style={{
+                          backgroundColor: "var(--color-muted)",
+                          color: "var(--color-muted-foreground)",
+                        }}
+                      >
                         {tech}
-                        </span>
+                      </span>
                     ))}
-                    </div>
+                  </div>
                 </CardSpotlight>
-                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -69,16 +82,15 @@ export default function CaseStudy() {
   );
 }
 
-
 const Step = ({ title }: { title: string }) => {
   return (
     <li className="flex gap-2 items-start">
       <CheckIcon />
-      <p className="text-white">{title}</p>
+      <p style={{ color: "var(--color-foreground)" }}>{title}</p>
     </li>
   );
 };
- 
+
 const CheckIcon = () => {
   return (
     <svg
@@ -87,7 +99,8 @@ const CheckIcon = () => {
       height="24"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="h-4 w-4 text-blue-500 mt-1 shrink-0"
+      className="h-4 w-4 mt-1 shrink-0"
+      style={{ color: "var(--color-primary)" }}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
