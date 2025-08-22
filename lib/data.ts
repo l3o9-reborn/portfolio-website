@@ -1,5 +1,6 @@
 // lib/data.ts
 import { Briefcase, Code, GraduationCap } from "lucide-react";
+import { id } from "zod/v4/locales";
 
 // Define and export the type for a single project
 export type Project = {
@@ -32,7 +33,7 @@ export const projects: Project[] = [
         "Vercel"
       ],
       image: "/Medo.png",
-      live: "https://medo-sooty.vercel.app/",
+      live: "https://medo-meetdoc-k8kz.vercel.app/",
       github: "https://github.com/l3o9-reborn/medo",
     },
     {
@@ -58,41 +59,6 @@ export const projects: Project[] = [
     },
     {
       id: 3,
-      title: "Quick Rock Technologies",
-      description:
-        "QuickRock Technologies Your trusted Software Development Partner .A top tier software development team assisting owners and decision makers to implement digital initiatives to achieve lasting financial success",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "React Lottie",
-        "Framer Motion",
-      ],
-      image: "/QR.jpg",
-      live: "https://quickrocktechnologies-6ihr.vercel.app/", 
-      github: "https://github.com/l3o9-reborn/quickrocktechnologies"
-    },
-     {
-      id: 4,
-      title: "InsightHub (Next.js Blog)",
-      description:
-        "With InsightHub Explore the World Through Words. Discover insightful articles, thought-provoking stories, and expert perspectives on technology, lifestyle, and innovation.",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Prisma",
-        "NextAuth / Clerk (Authentication)"
-      ],
-      image: "/insightHub.png",
-      live: "https://next-blog-pi-self.vercel.app/", 
-      github: "https://github.com/l3o9-reborn/next_blog"
-    },
-     {
-      id: 5,
       title: "ToDoFication",
       description:
         "Todofication is a smart task management app that goes beyond just to-dos. It tracks deadlines with a live countdown, visualizes progress through interactive charts, and automatically cleans up expired tasks using cron jobs. Users also receive a daily email summary of their tasks, ensuring productivity and accountability every day.",
@@ -110,7 +76,41 @@ export const projects: Project[] = [
       live: "https://todofication.vercel.app/",
       github: "https://github.com/l3o9-reborn/todofication"
     },
-
+    {
+      id: 4,
+      title: "Quick Rock Technologies",
+      description:
+        "QuickRock Technologies Your trusted Software Development Partner .A top tier software development team assisting owners and decision makers to implement digital initiatives to achieve lasting financial success",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "React Lottie",
+        "Framer Motion",
+      ],
+      image: "/QR.png",
+      live: "https://quickrocktechnologies-6ihr.vercel.app/", 
+      github: "https://github.com/l3o9-reborn/quickrocktechnologies"
+    },
+     {
+      id: 5,
+      title: "InsightHub (Next.js Blog)",
+      description:
+        "With InsightHub Explore the World Through Words. Discover insightful articles, thought-provoking stories, and expert perspectives on technology, lifestyle, and innovation.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "NextAuth / Clerk (Authentication)"
+      ],
+      image: "/insightHub.png",
+      live: "https://next-blog-pi-self.vercel.app/", 
+      github: "https://github.com/l3o9-reborn/next_blog"
+    },
     {
         id: 6,
         title: "Portfolio Website",
@@ -140,6 +140,38 @@ export const projects: Project[] = [
     },
 
 ];
+
+
+export const caseStudies = [
+  {
+  id: 1,
+  name: "MeDo — Healthcare Platform",
+  problem: "Patients often had to wait in long queues to see their doctors. For those with limited mobility or when visiting clinics was difficult, accessing timely healthcare was challenging.",
+  solution: "MeDo is a digital healthcare platform that reduces physical movement and increases accessibility. Patients can schedule appointments and consult with doctors anytime, anywhere using MeDo's digital tools.",
+  whatIBuilt: "Auth, scheduling, real-time consultations, responsive UI using shadcn/ui, and integration with video calls via Vonage.",
+  outcome: "Improved accessibility for patients; reduced waiting time and enabled healthcare access remotely.",
+  stack: ["Next.js", "Prisma", "PostgreSQL", "Clerk", "shadcn/ui", "Vonage"]
+},
+  {
+    id: 2,
+    name: "Contact Pro — Local Service Provider",
+    problem: "People needed a fast way to find trusted local service providers without middlemen or long waits.",
+    solution: "Location-based app that lets users browse professionals near them and call directly, showing the nearest providers with phone numbers.",
+    whatIBuilt: "Search and filtering by location, real-time contact access, responsive UI, and provider profiles.",
+    outcome: "Enabled users to connect with local experts instantly; simplified service access and supported local economy.",
+    stack: ["Next.js", "React", "TypeScript", "Leaflet js", "Tailwind CSS", "PostgreSQL", "GSAP", "Lottie","Prisma", "Custom Magic Link (Authentication)", "Vercel"]
+  },
+  {
+    id: 3,
+    name: "Todofication — Task Management & Notifications",
+    problem: "Users wanted a simple way to track daily todos, get reminders, and monitor task completion trends.",
+    solution: "Todo app with deadlines, automated nightly email reminders for due tasks, monthly completion graphs, and automatic cleanup of expired tasks using Node-Cron.",
+    whatIBuilt: "Todo creation with deadlines, email notifications for due tasks, monthly analytics graphs, and nightly auto-deletion of expired todos.",
+    outcome: "Helped users stay on top of tasks consistently; increased task completion rate and improved productivity tracking.",
+    stack: ["Next.js", "React", "PostgreSQL", "Tailwind CSS", "Node-Cron", "Nodemailer", "Custom Magic Link (Authentication)", "Prisma"]
+  }
+];
+
 
 export const historyData = [
   {
@@ -191,6 +223,88 @@ export const historyData = [
       "Currently working as a freelance full-stack developer, contributing to open source projects, and continuously enhancing my skills in web development.",
   },
 ];
+
+export const testimonials = [
+  {
+    quote:
+      "Leon brought our idea to life with precision and speed. The MVP he delivered allowed us to validate our product in record time.",
+    name: "Brooke Cagle",
+    designation: "Founder of Tributary Studio ",
+    src: "/brooke-cagle.jpg",
+  },
+  {
+    quote:
+      "His ability to handle both frontend and backend seamlessly was impressive. The deployment and Stripe integration worked flawlessly.",
+    name: "Alexander Hemip",
+    designation: "A photographer and Designer",
+    src: "/alexander-hipp.jpg",
+  },
+  {
+    quote:
+      "The app Leon built simplified our internal processes and boosted team productivity. The UI was intuitive and well thought-out.",
+    name: "Laura Chouette",
+    designation:"Travel and lifestyle blogger",
+    src: "/laura-chouette.jpg",
+  },
+  {
+    quote:
+      "Leon's attention to performance was outstanding. He optimized our database and frontend, cutting load times by more than half.",
+    name: "George Dagore",
+    designation: "Creative Entrepreneur & Designer",
+    src: "/george_dagerotip.jpg",
+  },
+  {
+    quote:
+      "From planning to launch, Leon was proactive and reliable. The scalability of the solution he built gave us confidence to grow fast.",
+    name: "Linda Thompson",
+    designation: "Event planner and entrepreneur",
+    src: "/lisa.jpg",
+  },
+];
+
+
+
+  export const services = [
+  {
+    id: 1,
+    name: "MVP Sprint",
+    price: "$2,500–$4,500 (2–3 weeks)",
+    features: [
+      "Authentication & secure database setup",
+      "Core feature implementation",
+      "Payment integration with Stripe",
+      "Deployment on Vercel (production-ready)",
+      "Comprehensive documentation",
+      "Handoff video walkthrough"
+    ],
+  },
+  {
+    id: 2,
+    name: "SaaS Turbo",
+    price: "$6,000–$9,000 (4–6 weeks)",
+    features: [
+      "Advanced roles & permissions",
+      "Subscription billing system",
+      "Custom dashboards",
+      "Automated email notifications",
+      "Audit logs & activity tracking",
+      "Analytics integration",
+      "2 weeks of post-launch support & iterations"
+    ],
+  },
+  {
+    id: 3,
+    name: "Performance Rescue",
+    price: "$1,200 (3–5 days)",
+    features: [
+      "Improve TTFB & LCP for faster load times",
+      "Image & font optimization",
+      "Database query/index tuning",
+      "Before & after performance report with metrics"
+    ],
+  },
+];
+
 
 
 export const frontendTech = [

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "@/public/headshot.jpg";
 import { AuroraBackground } from "../ui/aurora-background";
+import { Button } from "../ui/button";
 export default function Hero() {
   return (
     <section
@@ -69,9 +70,11 @@ export default function Hero() {
             <span>Munna H.</span> {/* Add a space for the inline view */}
             <span className="block lg:inline text-primary">Leon</span>
           </h1>
-          <p className="font-serif text-xl pt-4 lg:pt-9 text-muted-foreground">
-            Full Stack Engineer | Tech Enthusiast
+          <p className="font-serif text-xl pt-4 lg:pt-9 text-muted-foreground pl-5 md:pl-0 text-center md:text-left">
+            I ship SaaS & MVPs in 2–4 weeks.
+            Next.js + Prisma + Postgres. Production-grade, fast, and maintainable.
           </p>
+          
         </div>
       </div>
     </section>
