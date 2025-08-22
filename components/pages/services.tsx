@@ -33,7 +33,7 @@ export default function Services() {
           < div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-3 items-center">
             {services.map((service, index) => (
                 <div key={service.id} >
-                    <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+                    <BackgroundGradient className="rounded-[22px] max-w-sm min-h-120 p-4 sm:p-10 bg-white dark:bg-zinc-900">
                         <p className="text-base flex flex-col items-center  sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                           <span>{service.name}</span>
                           <span className="text-sm text-emerald-800">{service.price}</span>

@@ -1,10 +1,11 @@
-// "use client";
+"use client";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { Button } from "../ui/button";
 import { projects } from "@/lib/data";
 import * as React from "react";
 import { ParallaxScroll } from "../common/ParallaxProjectCard";
+import { motion } from "motion/react";
 
 export default function Projects() {
   return (
@@ -13,14 +14,24 @@ export default function Projects() {
       className="  flex flex-col  min-h-full py-20 items-center justify-center bg-muted/10"
     >
       <div className="flex flex-col justify-center items-center  lg:px-[15%] content-center">
-        <div className="max-w-3xl mx-auto text-center px-4 lg:px-0">
-          <h2 className="text-5xl  font-serif  tracking-tight leading-tight mb-3">
+        <div className="max-w-3xl mx-auto text-center">
+          <motion.h2 
+            className="text-5xl font-serif tracking-tight leading-tight mb-3"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             Projects
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          </motion.h2>
+          <motion.p 
+            className="text-lg text-muted-foreground mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             Here are some of the projects I've worked on. Each project showcases
             different technologies and skills.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className=" flex items-center w-full max-w-md md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 md:px-8 xl:px-0  ">
