@@ -28,7 +28,9 @@ export default function CaseStudy() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             style={{ color: "var(--color-muted-foreground)" }}
-          />
+          >
+           Every project tells a story—challenges faced, solutions crafted, and the impact left behind. Explore how ideas turned into real results.
+          </motion.p>
         </div>
 
         <div className="flex justify-center">
