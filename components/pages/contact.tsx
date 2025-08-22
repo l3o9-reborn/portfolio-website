@@ -18,7 +18,7 @@ import {
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Alert, AlertDescription } from "../ui/alert";
-import { sendEmail } from "../../lib/actions";
+import { sendEmail } from "@/lib/actions";
 // Form validation schema
 const contactFormSchema = z.object({
   name: z

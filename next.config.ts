@@ -28,7 +28,10 @@ const nextConfig: NextConfig = {
         headers: securityHeaders,
       },
     ];
-  }
+  },
+  images: {
+    domains: ["images.unsplash.com"], // ✅ Allow Unsplash images
+  },
 };
 
 export default nextConfig;

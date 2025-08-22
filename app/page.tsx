@@ -4,6 +4,10 @@ import Footer from "@/components/pages/footer";
 import Projects from "@/components/pages/projects";
 import History from "@/components/pages/history";
 import Contact from "@/components/pages/contact";
+import { AnimatedTestimonials } from "@/components/common/animated-testimonials";
+import { testimonials } from "@/lib/data";
+import Services from "@/components/pages/services";
+import CaseStudy from "@/components/pages/casestudy";
 
 export default function Home() {
   return (
@@ -15,6 +19,9 @@ export default function Home() {
         <AboutMe />
         <History />
         <Projects />
+        <CaseStudy/>
+        <AnimatedTestimonials testimonials={testimonials}/>
+        <Services />
         <Contact />
         <Footer />
       </div>
