@@ -225,6 +225,13 @@ export const historyData = [
 ];
 
 export const testimonials = [
+ {
+    quote:
+      "Leon developed a sleek and professional website for my dental practice. The appointment system and patient portal are incredibly intuitive, and it has greatly improved how I manage bookings and communicate with patients.",
+    name: "Dr. Lukas Schneider",
+    designation: "Dentist, SmileLine Dental, Germany",
+    src: "/dentist.jpg",
+  },
   {
     quote:
       "Leon brought our idea to life with precision and speed. The MVP he delivered allowed us to validate our product in record time.",
@@ -264,43 +271,84 @@ export const testimonials = [
 
 
 
-  export const services = [
+//   export const services = [
+//   {
+//     id: 1,
+//     name: "MVP Sprint",
+//     price: "$2,500–$4,500 (2–3 weeks)",
+//     features: [
+//       "Authentication & secure database setup",
+//       "Core feature implementation",
+//       "Payment integration with Stripe",
+//       "Deployment on Vercel (production-ready)",
+//       "Comprehensive documentation",
+//       "Handoff video walkthrough"
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "SaaS Turbo",
+//     price: "$6,000–$9,000 (4–6 weeks)",
+//     features: [
+//       "Advanced roles & permissions",
+//       "Subscription billing system",
+//       "Custom dashboards",
+//       "Automated email notifications",
+//       "Audit logs & activity tracking",
+//       "Analytics integration",
+//       "2 weeks of post-launch support & iterations"
+//     ],
+//   },
+//   {
+//     id: 3,
+//     name: "Performance Rescue",
+//     price: "$1,200 (3–5 days)",
+//     features: [
+//       "Improve TTFB & LCP for faster load times",
+//       "Image & font optimization",
+//       "Database query/index tuning",
+//       "Before & after performance report with metrics"
+//     ],
+//   },
+// ];
+
+export const services = [
   {
     id: 1,
-    name: "MVP Sprint",
-    price: "$2,500–$4,500 (2–3 weeks)",
+    name: "Doctor Website Starter",
+    price: "$600–$900 (1–2 weeks)",
     features: [
-      "Authentication & secure database setup",
-      "Core feature implementation",
-      "Payment integration with Stripe",
-      "Deployment on Vercel (production-ready)",
-      "Comprehensive documentation",
-      "Handoff video walkthrough"
+      "Professional portfolio website with services & profile",
+      "Contact form & WhatsApp booking button",
+      "Google Maps integration for clinic location",
+      "SEO setup so patients find you on Google",
+      "Mobile-friendly, fast, and secure website",
     ],
   },
   {
     id: 2,
-    name: "SaaS Turbo",
-    price: "$6,000–$9,000 (4–6 weeks)",
+    name: "Clinic Pro Website",
+    price: "$1,200–$2,500 (3–4 weeks)",
     features: [
-      "Advanced roles & permissions",
-      "Subscription billing system",
-      "Custom dashboards",
-      "Automated email notifications",
-      "Audit logs & activity tracking",
-      "Analytics integration",
-      "2 weeks of post-launch support & iterations"
+      "Online appointment booking system",
+      "Patient file & report uploads",
+      "Payment integration (Stripe, SSLCOMMERZ, bKash)",
+      "Blog system for health tips (SEO boost)",
+      "WhatsApp / SMS reminders for patients",
+      "Admin dashboard for managing appointments",
     ],
   },
   {
     id: 3,
-    name: "Performance Rescue",
-    price: "$1,200 (3–5 days)",
+    name: "Digital Practice Plus",
+    price: "$3,000–$5,000 (4–6 weeks)",
     features: [
-      "Improve TTFB & LCP for faster load times",
-      "Image & font optimization",
-      "Database query/index tuning",
-      "Before & after performance report with metrics"
+      "Video consultation system (telemedicine)",
+      "Real-time chat with patients",
+      "Secure patient portal with login",
+      "Advanced analytics (patient flow & revenue tracking)",
+      "Full SEO, Google Maps, and social media integration",
+      "1 month of post-launch support & updates",
     ],
   },
 ];
