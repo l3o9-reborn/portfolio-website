@@ -234,9 +234,9 @@ export default function Contact() {
         <p className="text-sm">
           You can also reach me directly at{" "}
           <a
-            href="mailto:kamatsparsh@gmail.com"
+            href="mailto:getleon09@gmail.com"
             target="_blank"
-            aria-label="Email Sparsh Kamat"
+            aria-label="Email Munna H. Leon"
             className="text-primary underline underline-offset-4 hover:text-primary/90"
           >
             getleon09@gmail.com
