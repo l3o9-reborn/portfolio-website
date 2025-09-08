@@ -1,6 +1,6 @@
 import GithubIcon from "@/public/github.svg";
 import LinkedinIcon from "@/public/linkedin.svg";
-import { Mail } from "lucide-react";
+import { Mail, FileDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "@/public/headshot.jpg";
@@ -64,16 +64,22 @@ export default function Hero() {
             >
               <Mail width={24} height={24} />
             </Link>
+            <Link
+              href="/munnahleonresume.pdf"
+              target="_blank"
+              className="social-link"
+              aria-label="Download My Resume"
+            >
+              <FileDown width={24} height={24} />
+            </Link>
           </div>
           <h1 className="text-7xl md:pt-4 lg:pt-8 font-serif text-center md:text-left  text-primary">
             <span>Munna H.</span> {/* Add a space for the inline view */}
             <span className="block lg:inline text-primary">Leon</span>
           </h1>
           <p className="font-serif text-xl pt-4 lg:pt-9 text-muted-foreground pl-5 md:pl-0 text-center md:text-left">
-            I ship SaaS & MVPs in 2–4 weeks.
-            Next.js + Prisma + Postgres. Production-grade, fast, and maintainable.
-          </p>
-          
+           I build scalable, production-ready web apps. Experienced in delivering SaaS, MVPs, and full-stack platforms with modern tech stacks. Open to remote roles & freelance projects.
+          </p>          
         </div>
       </div>
     </section>

@@ -57,6 +57,25 @@ export const projects: Project[] = [
       live: "https://local-service-provider-six.vercel.app/",
       github: "https://github.com/l3o9-reborn/localServiceProvider",
     },
+{
+  id: 9,
+  title: "Big Apple Pediatrics",
+  description:
+   "Big Apple Pediatrics is the premier pediatric practice of Dr. Cathy Ward, dedicated to providing compassionate, comprehensive, and high-quality healthcare for children of all ages. The website serves as a central hub for families to explore Dr. Ward's extensive services, including well-child exams, vaccinations, newborn screenings, ADD/ADHD evaluations, allergy and asthma management, and wellness programs. Families can easily schedule appointments, access pediatric resources, and participate in specialized programs like the Pediatric Choice Program, designed for enhanced convenience and care. Dr. Ward's practice emphasizes education, prevention, and personalized treatment, ensuring every child receives attentive and professional care. The platform also highlights Dr. Ward's experience, awards, media appearances, office hours, and contact information, creating a seamless experience for patients and parents seeking reliable pediatric care in New York City.",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Next Theme",
+    "Vercel",
+  ],
+  image: "/bapmockup.png",
+  live: "https://bigapplepediatricsdev.vercel.app/",
+  github: "https://github.com/l3o9-reborn/big_apple_pediatrics",
+},
+
     {
       id: 3,
       title: "ToDoFication",
@@ -225,130 +244,133 @@ export const historyData = [
 ];
 
 export const testimonials = [
- {
+  // Doctor / Clinic oriented
+  {
     quote:
-      "Leon developed a sleek and professional website for my dental practice. The appointment system and patient portal are incredibly intuitive, and it has greatly improved how I manage bookings and communicate with patients.",
+      "Leon developed a modern and fully functional website for my dental clinic. The appointment system and patient portal make managing bookings effortless.",
     name: "Dr. Lukas Schneider",
     designation: "Dentist, SmileLine Dental, Germany",
     src: "/dentist.jpg",
   },
   {
     quote:
-      "Leon brought our idea to life with precision and speed. The MVP he delivered allowed us to validate our product in record time.",
+      "Our pediatric clinic's online booking and patient record system, built by Leon, has simplified workflow and improved patient satisfaction tremendously.",
+    name: "Dr Aleksandra Gajecka",
+    designation: "Pediatrician in Malta",
+    src: "/pediatrician.jpg",
+  },
+    {
+    quote:
+      "Leon brought our SaaS idea to life quickly and efficiently. The MVP allowed us to test our concept with real users and iterate fast.",
     name: "Brooke Cagle",
-    designation: "Founder of Tributary Studio ",
+    designation: "Founder of Tributary Studio",
     src: "/brooke-cagle.jpg",
   },
   {
     quote:
-      "His ability to handle both frontend and backend seamlessly was impressive. The deployment and Stripe integration worked flawlessly.",
+      "From frontend to backend, Leon built our MVP with precision. Payment integration, dashboards, and deployment were flawless.",
     name: "Alexander Hemip",
-    designation: "A photographer and Designer",
+    designation: "Entrepreneur & Designer",
     src: "/alexander-hipp.jpg",
   },
   {
     quote:
+      "Leon created a complete clinic management system, including patient records, payment integration, and notifications. It has transformed the way we operate.",
+    name: "Dr. Omar Ahmed",
+    designation: "Clinic Owner, HealthFirst Clinic, Bangladesh",
+    src: "/clinic.jpg",
+  },
+
+
+  {
+    quote:
       "The app Leon built simplified our internal processes and boosted team productivity. The UI was intuitive and well thought-out.",
     name: "Laura Chouette",
-    designation:"Travel and lifestyle blogger",
+    designation: "Travel and lifestyle blogger",
     src: "/laura-chouette.jpg",
-  },
-  {
-    quote:
-      "Leon's attention to performance was outstanding. He optimized our database and frontend, cutting load times by more than half.",
-    name: "George Dagore",
-    designation: "Creative Entrepreneur & Designer",
-    src: "/george_dagerotip.jpg",
-  },
-  {
-    quote:
-      "From planning to launch, Leon was proactive and reliable. The scalability of the solution he built gave us confidence to grow fast.",
-    name: "Linda Thompson",
-    designation: "Event planner and entrepreneur",
-    src: "/lisa.jpg",
   },
 ];
 
 
 
-//   export const services = [
-//   {
-//     id: 1,
-//     name: "MVP Sprint",
-//     price: "$2,500–$4,500 (2–3 weeks)",
-//     features: [
-//       "Authentication & secure database setup",
-//       "Core feature implementation",
-//       "Payment integration with Stripe",
-//       "Deployment on Vercel (production-ready)",
-//       "Comprehensive documentation",
-//       "Handoff video walkthrough"
-//     ],
-//   },
-//   {
-//     id: 2,
-//     name: "SaaS Turbo",
-//     price: "$6,000–$9,000 (4–6 weeks)",
-//     features: [
-//       "Advanced roles & permissions",
-//       "Subscription billing system",
-//       "Custom dashboards",
-//       "Automated email notifications",
-//       "Audit logs & activity tracking",
-//       "Analytics integration",
-//       "2 weeks of post-launch support & iterations"
-//     ],
-//   },
-//   {
-//     id: 3,
-//     name: "Performance Rescue",
-//     price: "$1,200 (3–5 days)",
-//     features: [
-//       "Improve TTFB & LCP for faster load times",
-//       "Image & font optimization",
-//       "Database query/index tuning",
-//       "Before & after performance report with metrics"
-//     ],
-//   },
-// ];
+
+// services.ts
 
 export const services = [
   {
     id: 1,
-    name: "Doctor Website Starter",
-    price: "$600–$900 (1–2 weeks)",
+    name: "MVP Sprint",
+    price:  "$1,200–$2,500 (2–3 weeks)",
     features: [
-      "Professional portfolio website with services & profile",
-      "Contact form & WhatsApp booking button",
-      "Google Maps integration for clinic location",
-      "SEO setup so patients find you on Google",
-      "Mobile-friendly, fast, and secure website",
+      "Authentication & secure database setup",
+      "Core feature implementation",
+      "Payment integration with Stripe",
+      "Deployment on Vercel (production-ready)",
+      "Comprehensive documentation",
+      "Handoff video walkthrough",
     ],
   },
   {
     id: 2,
+    name: "SaaS Turbo",
+    price: "$3,000–$6,000 (4–6 weeks)",
+    features: [
+      "Advanced roles & permissions",
+      "Subscription billing system",
+      "Custom dashboards",
+      "Automated email notifications",
+      "Audit logs & activity tracking",
+      "Analytics integration",
+      "2 weeks of post-launch support",
+    ],
+  },
+  {
+    id: 3,
+    name: "Performance Rescue",
+    price: "$500–$1,200 (3–5 days)",
+    features: [
+      "Improve TTFB & LCP",
+      "Image & font optimization",
+      "Database query/index tuning",
+      "Before & after performance report",
+    ],
+  },
+  {
+    id: 4,
+    name: "Doctor Website Starter",
+    price: "$600–$900 (1–2 weeks)",
+    features: [
+      "Portfolio website with services & profile",
+      "Contact form & WhatsApp booking",
+      "Google Maps integration",
+      "SEO setup for Google search",
+      "Mobile-friendly & secure website",
+    ],
+  },
+  {
+    id: 5,
     name: "Clinic Pro Website",
     price: "$1,200–$2,500 (3–4 weeks)",
     features: [
       "Online appointment booking system",
       "Patient file & report uploads",
       "Payment integration (Stripe, SSLCOMMERZ, bKash)",
-      "Blog system for health tips (SEO boost)",
-      "WhatsApp / SMS reminders for patients",
-      "Admin dashboard for managing appointments",
+      "Blog system for SEO",
+      "WhatsApp / SMS reminders",
+      "Admin dashboard",
     ],
   },
   {
-    id: 3,
+    id: 6,
     name: "Digital Practice Plus",
     price: "$3,000–$5,000 (4–6 weeks)",
     features: [
-      "Video consultation system (telemedicine)",
+      "Video consultation system",
       "Real-time chat with patients",
       "Secure patient portal with login",
-      "Advanced analytics (patient flow & revenue tracking)",
-      "Full SEO, Google Maps, and social media integration",
-      "1 month of post-launch support & updates",
+      "Advanced analytics",
+      "Full SEO, Maps, social media integration",
+      "1 month of support",
     ],
   },
 ];
