@@ -67,6 +67,6 @@ jobs:
       - name: Set Railway Project and Deploy
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
-          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}  # set project via env
+          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}
         run: |
-          railway up --docker ${{ secrets.DOCKERHUB_USERNAME }}/munnahleon:latest --detach
+          railway up -- --docker ${{ secrets.DOCKERHUB_USERNAME }}/munnahleon:latest --detach
