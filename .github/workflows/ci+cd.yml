@@ -63,7 +63,13 @@ jobs:
       - name: Install Railway CLI
         run: npm install -g @railway/cli
 
-      # 3️⃣ Deploy to Railway
+      # 3️⃣ Explicit Railway Login (FIX for "Unauthorized" error)
+      - name: Railway Login
+        env:
+          RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+        run: railway login --apikey $RAILWAY_API_KEY
+
+       # 4️⃣ Deploy to Railway (FIX for --project/--image errors)
       - name: Deploy to Railway
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
