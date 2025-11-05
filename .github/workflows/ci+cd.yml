@@ -61,12 +61,18 @@ jobs:
 
       # 2️⃣ Install Railway CLI
       - name: Install Railway CLI
-        run: curl -sSL https://railway.app/install.sh | sh
+        run: npm install -g @railway/cli
 
       # 3️⃣ Set Railway Project and Deploy
       - name: Set Railway Project and Deploy
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
           RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}
+        run: |
+          railway login --apiKey $RAILWAY_API_KEY
+          railway link $RAILWAY_PROJECT
+          
+      #  Deploy Docker Image
+      - name: Deploy Docker image
         run: |
           railway up --image ${{ secrets.DOCKER_IMAGE }} --detach
