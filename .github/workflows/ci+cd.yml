@@ -64,9 +64,7 @@ jobs:
         run: npm install -g @railway/cli
 
       # 3️⃣ Set Railway Project and Deploy
-      - name: Set Railway Project and Deploy
+      - name: Deploy to Railway
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
-          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}
-        run: |
-          railway up --project $RAILWAY_PROJECT --image ${{ secrets.DOCKER_IMAGE }} --detach
+        run: railway up --image ${{ secrets.DOCKER_IMAGE }} --detach -- --project ${{ secrets.RAILWAY_PROJECT_ID }}
