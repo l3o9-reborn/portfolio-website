@@ -19,8 +19,8 @@ const securityHeaders = [
   },
 ];
 
-
 const nextConfig: NextConfig = {
+  /* config options here */
   async headers() {
     return [
       {
@@ -30,20 +30,7 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
-  },
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
-    return config;
+    domains: ["images.unsplash.com"], // ✅ Allow Unsplash images
   },
 };
 
