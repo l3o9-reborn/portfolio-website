@@ -1,6 +1,6 @@
 // lib/data.ts
 import { Briefcase, Code, GraduationCap } from "lucide-react";
-import { id } from "zod/v4/locales";
+
 
 // Define and export the type for a single project
 export type Project = {
@@ -241,6 +241,30 @@ export const historyData = [
     description:
       "Currently working as a freelance full-stack developer, contributing to open source projects, and continuously enhancing my skills in web development.",
   },
+  {
+    icon: Briefcase,
+    title: "Front End Software Engineer (Part Time)",
+    company: "Homezup",
+    date: "September 2025 - present",
+    description:
+      `Responsibilities & Achievements:
+
+        Developed and maintained responsive, scalable frontend components and pages using Next.js, React, and TailwindCSS.
+
+        Enhanced UI/UX through iterative design improvements, accessibility optimizations (ARIA compliance, keyboard navigation), and performance tuning (Core Web Vitals, Lighthouse).
+
+        Integrated frontend interfaces with RESTful and GraphQL APIs, ensuring efficient data handling and real-time updates.
+
+        Implemented automated testing using Jest and React Testing Library for unit, integration, and UI behavior tests.
+
+        Improved build performance and CI/CD pipelines (Docker, GitHub Actions) to ensure reliable deployments and code quality enforcement.
+
+        Collaborated closely with clients and backend developers on planning, delivery, and feature iterations using Agile methodologies.
+
+        Conducted code reviews and enforced ESLint, Prettier, and accessibility best practices across the codebase.
+
+        Monitored and optimized runtime performance, reducing load times and bundle size.`,
+  },
 ];
 
 export const testimonials = [
@@ -401,7 +425,7 @@ export const backendTech = [
 
 ];
 
-export const toolsAndDevops = ["GitHub", "Vercel", "Linux", "Vitest", "Jest",  "Postman", "Prisma Studio"];
+export const toolsAndDevops = ["GitHub","GitHub Actions","Docker", "Vercel", "Linux", "Vitest", "Jest",  "Postman","Inspect Tools", "Prisma Studio"];
 
 export const programmingLanguages = ["JavaScript","TypeScript", "C++", "Python", "SQL", "Prisma Query Language"];
 
