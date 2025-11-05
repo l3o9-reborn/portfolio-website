@@ -75,4 +75,4 @@ jobs:
 
       # 5️⃣ Deploy Docker image
       - name: Deploy Docker image
-        run: railway up --docker ${{ secrets.DOCKERHUB_USERNAME }} --detach
+        run: railway up --docker ${{ secrets.DOCKERHUB_USERNAME }}/munnahleon:latest --detach
