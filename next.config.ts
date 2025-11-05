@@ -20,6 +20,7 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+ 
   /* config options here */
   async headers() {
     return [

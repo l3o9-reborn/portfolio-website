@@ -1,5 +1,5 @@
-import GithubIcon from "@/public/github.svg";
-import LinkedinIcon from "@/public/linkedin.svg";
+import GithubIcon from "@/app/assets/github.svg";
+import LinkedinIcon from "@/app/assets/linkedin.svg";
 import { Mail, FileDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
