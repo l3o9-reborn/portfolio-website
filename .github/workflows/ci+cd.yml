@@ -63,10 +63,10 @@ jobs:
       - name: Install Railway CLI
         run: curl -sSL https://railway.app/install.sh | sh
 
-      # 3️⃣ Deploy to railway
-      - name: Link Railway project and deploy
+      # 3️⃣ Set Railway Project and Deploy
+      - name: Set Railway Project and Deploy
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}  # set project via env
         run: |
-          railway link ${{ secrets.RAILWAY_PROJECT_ID }}
           railway up --docker ${{ secrets.DOCKERHUB_USERNAME }}/munnahleon:latest --detach
