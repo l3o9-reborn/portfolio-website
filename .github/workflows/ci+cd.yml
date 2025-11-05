@@ -67,4 +67,4 @@ jobs:
       - name: Deploy to Railway
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
-        run: railway up --detach -- --project ${{ secrets.RAILWAY_PROJECT_ID }} --image ${{ secrets.DOCKER_IMAGE }}
+        run: railway up --detach --project ${{ secrets.RAILWAY_PROJECT_ID }} --image ${{ secrets.DOCKER_IMAGE }}
