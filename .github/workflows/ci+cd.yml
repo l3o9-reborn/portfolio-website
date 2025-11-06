@@ -70,8 +70,17 @@ jobs:
         run: railway login --apikey $RAILWAY_API_KEY
 
        # 4️⃣ Deploy to Railway (FIX for --project/--image errors)
-      - name: Deploy to Railway
+      - name: Link Railway Project and Deploy
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
-          RAILWAY_PROJECT: ${{ secrets.RAILWAY_PROJECT_ID }}
-        run: railway up --detach --ci
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
+          DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+        run: |
+          # 1️⃣ Authenticate with Railway
+          railway login --apikey $RAILWAY_API_KEY
+
+          # 2️⃣ Explicitly link to your project
+          railway link --project $RAILWAY_PROJECT_ID
+
+          # 3️⃣ Deploy the new Docker image
+          railway up --ci --detach --image $DOCKER_IMAGE
