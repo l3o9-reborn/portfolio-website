@@ -197,7 +197,7 @@ export const historyData = [
     icon: GraduationCap,
     title: "BSc (Hons) in Electrical and Electronic Engineering",
     institution: "Begum Rokeya University, Rangpur",
-    date: "2019 - 2025",
+    date: "2019 - 2026",
     description:
       "Graduating with a strong academic foundation while simultaneously building expertise in software engineering and full-stack web development.",
   },
@@ -245,7 +245,7 @@ export const historyData = [
     icon: Briefcase,
     title: "Front End Software Engineer (Part Time)",
     company: "Homezup",
-    date: "September 2025 - present",
+    date: "September 2025 - February 2026",
     description:
       `Responsibilities & Achievements:
 
@@ -293,7 +293,7 @@ export const testimonials = [
   {
     quote:
       "From frontend to backend, Leon built our MVP with precision. Payment integration, dashboards, and deployment were flawless.",
-    name: "Alexander Hemip",
+    name: "Alexander Hipp",
     designation: "Entrepreneur & Designer",
     src: "/alexander-hipp.jpg",
   },
@@ -425,7 +425,7 @@ export const backendTech = [
 
 ];
 
-export const toolsAndDevops = ["GitHub","GitHub Actions","Docker", "Vercel", "Linux", "Vitest", "Jest",  "Postman","Inspect Tools", "Prisma Studio"];
+export const toolsAndDevops = ["GitHub","GitHub Actions","Docker","Nginxa", "Vercel", "Linux", "Vitest", "Jest",  "Postman","Inspect Tools", "Prisma Studio", "Jira"];
 
-export const programmingLanguages = ["JavaScript","TypeScript", "C++", "Python", "SQL", "Prisma Query Language"];
+export const programmingLanguages = ["JavaScript","TypeScript", "C++", "Python","PHP", "SQL", "Prisma Query Language"];
 

@@ -10,7 +10,7 @@ import CaseStudy from "@/components/pages/casestudy";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <Hero />
       {/* This div gives the rest of the page a solid background,
             creating the parallax effect as it scrolls over the fixed Vanta canvas. */}
@@ -20,10 +20,10 @@ export default function Home() {
         <Projects />
         <CaseStudy/>
         <Testimonials/>
-        <Services />
+         <Services />
         <Contact />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

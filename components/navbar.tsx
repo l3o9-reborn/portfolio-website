@@ -30,11 +30,15 @@ const navLinks: NavLink[] = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleScrollClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     targetId: string
   ) => {
+
+    setIsOpen(false); // Close the dropdown menu on link click
+
     if (pathname !== "/") {
       return;
     }
@@ -87,6 +91,7 @@ export default function Navbar() {
     }
   }, [pathname]);
 
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-background/60 backdrop-blur-sm shadow-muted-foreground dark:bg-background/80 transition-colors duration-300 border-b border-border">
       <div className="flex h-16 items-center justify-between px-4 md:px-8">
@@ -116,7 +121,7 @@ export default function Navbar() {
         </nav>
 
         <div className="md:hidden">
-          <DropdownMenu>
+          <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
             <DropdownMenuTrigger asChild>
               <button className="p-2 rounded-md hover:bg-muted"
               aria-label="Open navigation  menu">

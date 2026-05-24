@@ -1,6 +1,6 @@
 import GithubIcon from "@/app/assets/github.svg";
 import LinkedinIcon from "@/app/assets/linkedin.svg";
-import { Mail, FileDown } from "lucide-react";
+import { Mail, Folder} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "@/public/headshot.jpg";
@@ -70,7 +70,7 @@ export default function Hero() {
               className="social-link"
               aria-label="Download My Resume"
             >
-              <FileDown width={24} height={24} />
+              <Folder width={24} height={24} />
             </Link>
           </div>
           <h1 className="text-7xl md:pt-4 lg:pt-8 font-serif text-center md:text-left  text-primary">

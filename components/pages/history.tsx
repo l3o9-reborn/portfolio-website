@@ -31,7 +31,7 @@ export default function History() {
 
           <div
             ref={containerRef}
-            className="relative h-full w-full max-w-3xl md:max-w-5xl mx-auto p-4 "
+            className="relative h-full w-full max-w-3xl md:max-w-5xl mx-auto p-4 scale-99"
           >
             {/* Dedicated Timeline Line */}
             <div className=" absolute top-0 h-full left-4 md:left-1/2 md:-translate-x-1/2 flex items-center justify-center">

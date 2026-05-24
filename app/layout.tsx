@@ -13,7 +13,7 @@ const robotoSerif = Roboto_Serif({
 });
 
 // Define base URL once
-const baseUrl = 'https://munnahleon.vercel.app';
+const baseUrl = 'https://munnahleon.me';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
